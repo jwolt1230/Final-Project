@@ -167,7 +167,7 @@ $( "#Hotel" ).change(function() {
     ;} else {
         constructionGeoJSON.eachLayer(function (layer) {  
         if(layer.feature.properties.ProjectTyp == 'Hotel') {    
-            layer.setStyle({fillColor :'none'}) 
+            layer.setStyle({fillColor :'none', color : 'none'}) 
             console.log(layer.feature.properties.ProjectTyp);
             }   
         });
